@@ -22,7 +22,7 @@ val json = json {
         }
 ```
 
-- jsonArray
+- jsonArray:
 ```kotlin
 val json = json(true) {
             0 be 1
