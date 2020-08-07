@@ -21,6 +21,10 @@ val json = json {
             }
         }
 ```
+you will get a json object node like:
+```json
+{"a":1,"b":"1","c":1.1,"d":false,"e":[1,2],"f":{"g":["3","4"]}}
+```
 
 - jsonArray:
 ```kotlin
@@ -40,4 +44,9 @@ val json = json(true) {
                 }
             }
         }
+```
+
+you will get a json array node like:
+```json
+[1,"1",1.1,false,[1,2],{"g":["3","4"]}]
 ```
