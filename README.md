@@ -1,7 +1,7 @@
 # json-dsl
 a simple json dsl
 [![CI](https://github.com/midKingKing/json-dsl/actions/workflows/blank.yml/badge.svg)](https://github.com/midKingKing/json-dsl/actions/workflows/blank.yml)
-
+[![Gradle Package](https://github.com/midKingKing/json-dsl/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/midKingKing/json-dsl/actions/workflows/gradle-publish.yml)
 
 - json:
 ```kotlin
