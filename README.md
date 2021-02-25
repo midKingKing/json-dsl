@@ -1,5 +1,6 @@
 # json-dsl
 a simple json dsl
+[![CI](https://github.com/midKingKing/json-dsl/actions/workflows/blank.yml/badge.svg)](https://github.com/midKingKing/json-dsl/actions/workflows/blank.yml)
 
 
 - json:
