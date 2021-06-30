@@ -1,11 +1,12 @@
 package com.jimi.json
 
 import com.fasterxml.jackson.databind.node.ArrayNode
+import com.jimi.verify.jsonVerify
 import org.junit.Test
 
 class Sample {
     @Test
-    fun `test json object dsl` () {
+    fun `test json object dsl`() {
         val json = json {
             "a" be 1
             "b" be "1"
@@ -37,7 +38,7 @@ class Sample {
     }
 
     @Test
-    fun `test json array dsl` () {
+    fun `test json array dsl`() {
         val json = json(true) {
             0 be 1
             1 be "1"
@@ -66,5 +67,22 @@ class Sample {
         assert(arrF.size() == 2)
         assert(arrF[0].asText() == "3")
         assert(arrF[1].asText() == "4")
+    }
+
+    @Test
+    fun `json verify`() {
+        jsonStr {
+            "a" be "123"
+            "b" be 1
+            "c" be {
+                "a" be true
+            }
+        }.jsonVerify {
+            "a" eq "123"
+            "b" eq 1
+            "c" eq {
+                "a" eq true
+            }
+        }
     }
 }
